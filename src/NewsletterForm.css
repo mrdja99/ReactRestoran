@@ -1,0 +1,33 @@
+.newsletter-form {
+    color: #ecf0f1; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3498db; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .subscriber:hover {
+    background-color: #2980b9; 
+  }

@@ -1,3 +1,11 @@
+.App {
+  text-align: center;
+}
+
+/*.content-container {
+  margin-top: 20px;
+}*/
+
 .navBar {
   display: flex;
   justify-content: center;
@@ -20,4 +28,46 @@ a {
   transition: color 0.3s ease;
 }
 
+h1 {
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-family: 'cursive', sans-serif; 
+  font-size: 2.5em; 
+  color: #ff4500; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
+.content-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  /*flex-direction: column;
+  align-items: center;*/
+  margin: 20px 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section img {
+  width: 400px; 
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: center;
+}
+
+.text h2 {
+  margin-bottom: 5px;
+}
+
+.text p {
+  margin: 10;
+  font-size: 25px;
+  font-style: italic;
+}
