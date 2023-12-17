@@ -1,0 +1,23 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  /*flex-direction: row;*/
+  background-color: #8B4513;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(175, 175, 175);
+  align-items: center;
+  min-height: 60px;
+  padding-left: 25px;
+  font-size: x-large;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
