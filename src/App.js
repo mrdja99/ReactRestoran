@@ -1,14 +1,27 @@
 import './App.css';
-import NavBar from './navBar';
+import NavBar from './NavBar';
 import ImageSlider from './ImageSlider';
 import Footer from './Footer';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import Onama from './Onama';
+import Pocetna from './Pocetna';
+
+
 
 function App() {
 
   return (
+    <BrowserRouter>
     <div className='App' >
       <NavBar/>
       <ImageSlider/>
+        <Routes>
+          <Route path="/" element={<Pocetna />} />
+          <Route path="/onama" element={<Onama />} />
+        </Routes>
+      
+      
+      {/*
       <h1>Specijaliteti restorana</h1>
 
       <div className='content-container'>
@@ -34,10 +47,12 @@ function App() {
           </div>
         </div>
       </div>
-
+      
       <Footer/>
-
+    */}
+    <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -11,9 +11,9 @@ function NewsletterForm() {
 
     const subscribeMessage = () => {
         if(isValidEmail(email)) {
-            prompt("Uspešno ste se prijavili");
+            alert("Uspešno ste se prijavili");
         } else {
-            prompt("Neispravan mejl. Molimo unesite ispravan mejl.");
+            alert("Neispravan mejl. Molimo unesite ispravan mejl.");
         }
     }
 
