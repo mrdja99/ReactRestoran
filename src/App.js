@@ -5,6 +5,7 @@ import Footer from './Footer';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Onama from './Onama';
 import Pocetna from './Pocetna';
+import Kontakt from './Kontakt';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Pocetna />} />
           <Route path="/onama" element={<Onama />} />
+          <Route path="/kontakt" element={<Kontakt />} />
         </Routes>
       
       

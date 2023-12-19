@@ -1,0 +1,40 @@
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: large;
+    font-style: italic;
+  }
+  
+  #name,
+  #utisak {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #utisak {
+    height: 100px; 
+    margin-bottom: 20px;
+  }
+  
+  .posalji {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .posalji:hover {
+    background-color: #483b94;
+    margin-bottom: 15px;
+  }
