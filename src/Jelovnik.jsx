@@ -4,9 +4,15 @@ import './Jelovnik.css'
 function Jelovnik() {
 
     const [zoomedIn, setZoomedIn] = useState(null);
+    const [slatkaZoomedIn, setSlatkaZoomedIn] = useState(null);
     
-    const zoomImageClick = (index) => {
-        setZoomedIn(zoomedIn === index ? null : index);
+    const zoomImageClick = (index, type) => {
+        if(type === 'slana') {
+            setZoomedIn(zoomedIn === index ? null : index);
+        }else if(type === 'slatka'){
+            setSlatkaZoomedIn(slatkaZoomedIn === index ? null : index);
+        }
+        
     }
 
     const slanaHrana = [
@@ -42,12 +48,45 @@ function Jelovnik() {
         }
     ]
 
+    const slatkaHrana = [
+        {
+            id:1,
+            naziv: "Cheesecake",
+            cena: "400 din",
+            slika: require('./images/Cheesecake.jpg')
+        },
+        {
+            id:2,
+            naziv: "Jaffa torta",
+            cena: "600 din",
+            slika: require('./images/JaffaTorta.jpg')
+        },
+        {
+            id:3,
+            naziv: "Lenja pita",
+            cena: "200 din",
+            slika: require('./images/LenjaPita.jpg')
+        },
+        {
+            id:4,
+            naziv: "Trilece",
+            cena: "300 din",
+            slika: require('./images/Trilece.jpg')
+        },
+        {
+            id:5,
+            naziv: "Tiramisu",
+            cena: "500 din",
+            slika: require('./images/Tiramisu.jpg')
+        }
+    ]
+
   return (
     <div className='jelovnik'>
         <h1>Slana hrana</h1>
         <div className='cards'>
             {slanaHrana.map((slanis, index) => (
-            <div key={slanis.id} className={`card ${zoomedIn === index ? 'zoomed' : ''}`} onClick={() => {zoomImageClick(index)}}>
+            <div key={slanis.id} className={`card ${zoomedIn === index ? 'zoomed' : ''}`} onClick={() => {zoomImageClick(index, 'slana')}}>
                 <img src={slanis.slika} alt={slanis.naziv} />
                 <h2>{slanis.naziv}</h2>
                 <p>{slanis.cena}</p>
@@ -55,6 +94,15 @@ function Jelovnik() {
             ))}
         </div>
         <h1>Slatka hrana</h1>
+        <div className='cards'>
+            {slatkaHrana.map((slatkis, index) => (
+            <div key={slatkis.id} className={`card ${slatkaZoomedIn === index ? 'zoomed' : ''}`} onClick={() => {zoomImageClick(index, 'slatka')}}>
+                <img src={slatkis.slika} alt={slatkis.naziv} />
+                <h2>{slatkis.naziv}</h2>
+                <p>{slatkis.cena}</p>
+            </div>
+            ))}
+        </div>
     </div>
   )
 }
