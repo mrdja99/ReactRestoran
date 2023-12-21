@@ -3,7 +3,7 @@ import './Onama.css'
 
 function Onama() {
   return (
-    <div>
+    <div data-testid="onama-test">
         <h1>O nama</h1>
         <p>
             Tri šešira“ je pravi biser među restoranima Skadarlije. Sagrađen je u srcu Skadarske ulice i u prepoznatljivom ambijentu postoji više od 150 godina. Otvoren je 1864. u zgradi u kojoj se prethodno nalazila zanatska radionica, koja je kao logotip imala tri plehana šešira. Po tome je restoran i dobio naziv. Po svojoj usluzi i kvalitetu restoran je poznat i izvan granica naše zemlje. Imao je čast da ugosti najeminentnije domaće i svetske ličnosti: Kralja Huana Karlosa, Džorža Buša, Pertinija, Vili Branta i druge. Svedočanstva o prijatnom boravku u restoranu čuvaju se u knjizi gostiju. „Tri Šešira“ – bogatstvo tradicije, umetnosti i boemskog života. Ovde su uživali i dane provodili Tin Ujević, Branislav Nušić, Gustav Krklec, Čiča Ilija Stanojević, Raka Drainac, a najznamenitiji stanovnik Skadarske ulice – Đura Jakšić ga je često nazivao „vinsko vrelo“.

@@ -82,7 +82,7 @@ function Jelovnik() {
     ]
 
   return (
-    <div className='jelovnik'>
+    <div className='jelovnik' data-testid="jelovnik-test">
         <h1>Slana hrana</h1>
         <div className='cards'>
             {slanaHrana.map((slanis, index) => (

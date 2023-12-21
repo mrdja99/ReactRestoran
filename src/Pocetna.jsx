@@ -3,7 +3,7 @@ import './Pocetna.css'
 
 function Pocetna() {
   return (
-    <div>
+    <div data-testid="pocetna-test">
         <h1>Specijaliteti restorana</h1>
 
         <div className='content-container'>
